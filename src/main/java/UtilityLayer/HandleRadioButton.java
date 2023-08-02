@@ -11,18 +11,19 @@ public class HandleRadioButton extends BaseClass{
 	{
 	for(WebElement abc: ls)	
 	{  
-		String gender=abc.getAttribute(value); 
-		if(gender==("1")&&value.equalsIgnoreCase("female"))
+		String gender=abc.getAttribute("value");
+		//System.out.println(gender);
+		if(gender.equals("1")&&value.equalsIgnoreCase("female"))
 		{
 			abc.click();
 			break;
 		}
-		else if(gender==("2")&&value.equalsIgnoreCase("male"))
+		else if(gender.equals("2")&&value.equalsIgnoreCase("male"))
 		{
 			abc.click();
 			break;
 		}
-		else if(gender==("-1")&&value.equalsIgnoreCase("custom"))
+		else if(gender.equals("-1")&&value.equalsIgnoreCase("custom"))
 		{
 			abc.click();
 			break;

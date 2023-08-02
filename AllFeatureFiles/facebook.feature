@@ -1,7 +1,7 @@
 Feature: Test Facebook Registration Application
 
   Scenario Outline: Test facebook registration page
-    Given User is on registration on "headless"
+    Given User is on registration on "chrome"
     
     Then User enter valid "<firstname>" and "<lastname>" and "<email>" and "<password>" and "<birthdaydate>" and "<birthdaymonth>" and "<birthdayyear>" and "<gender>"
 
